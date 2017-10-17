@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
@@ -13,13 +13,23 @@
 
 <div id="main" role="main">
   <article class="entry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
     <div class="entry-wrapper">
       <header class="entry-header">
         <h1 class="entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       </header>
+		{{ content }}
+        <ul class="entry-tags">
+          {% for tag in page.tags %}<li><a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a></li>{% endfor %}
+        </ul>
       <div class="entry-content">
-        {{ content }}
+        {% for mentor in site.data.mentors %} 
+			{% if mentor.avatar contains 'http' %}
+			  <img src="{{ mentor.avatar }}" class="bio-photo" alt="{{ mentor.name }} bio photo"/>
+			{% elsif mentor.avatar %}
+			  <img src="{{ site.url }}/images/{{ mentor.avatar }}" class="bio-photo" alt="{{ mentor.name }} bio photo"/>
+			{% endif %}
+			<span class="mentor vcard">By <span class="fn">{{ mentor.name }}</span></span>
+		{% endfor %}
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
   </article>

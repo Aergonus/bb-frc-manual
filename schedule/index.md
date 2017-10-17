@@ -1,11 +1,9 @@
 ---
 layout: default
 title: Schedule
+excerpt: "Description of 2017 Itinerary"
+modified: 2017-10-10T19:44:38.564948-04:00
 ---
-
-Since the aim of the workshops is to equip the students with knowledge/skills for FIRST and to simulate the research/build/competition cycle, the days should be roughly broken up to mimic the process.
-
-Our schedule will mimic the FIRST competition schedule. Our first day will teach you general robotics knowledge and teach you skills just like you would learn during your ... After lunch and presentation skills, we'll reveal the competition and the rules and start the build stage. Roughly the rest of the day will be dedicated to formulating a design. The final robot submission will be due lunchtime on the third day and the compeition will start after lunch. 
 
 ## October 21: 
 ### Morning Focus: Mimics the onboarding and research phase before the competition reveal
@@ -37,3 +35,7 @@ Our schedule will mimic the FIRST competition schedule. Our first day will teach
 10:30-12:30: Final build period
 12:30-1:15: Lunch 
 After is presentation and competition!
+
+Since the aim of the workshops is to equip the students with knowledge/skills for FIRST and to simulate the research/build/competition cycle, the days should be roughly broken up to mimic the process.
+
+Our schedule will mimic the FIRST competition schedule. Our first day will teach you general robotics knowledge and teach you skills just like you would learn during your ... After lunch and presentation skills, we'll reveal the competition and the rules and start the build stage. Roughly the rest of the day will be dedicated to formulating a design. The final robot submission will be due lunchtime on the third day and the compeition will start after lunch. 

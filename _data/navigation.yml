@@ -1,0 +1,22 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: Articles
+  url: /articles/
+
+- title: Blog
+  url: /blog/
+
+- title: Mentor Bios
+  url: /mentors/
+
+- title: Schedule
+  url: /schedule/
+
+- title: Rules
+  url: /rules/
+
+- title: Search
+  url: /search/
